@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2다단</title>
+    <style>
+        .column
+        {
+            /* 다단 생성 */
+            column-count: 3;
+
+            /* 다단 간격 조절 */
+            column-gap : 1em;
+
+            /* 다단 구분선 */
+            column-rule-style: dashed;
+            column-rule-width: 1px;
+            column-rule-color : red;
+            
+        }
+        .column p
+        {
+            font-size: 24px;
+        }
+        .no-col
+        {
+            column-span: all;
+        }
+    </style>
+</head>
+<body>
+    <h1>다단</h1>
+    <div class="column">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi nesciunt ut similique eum perspiciatis, vitae, nobis quaerat saepe eos voluptates animi natus deleniti iusto culpa vero numquam, nam est cum?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem in, veniam commodi consequatur odio hic praesentium! Debitis voluptas incidunt ipsum impedit et! Repudiandae quas similique fuga rerum incidunt eligendi quis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis rem nemo sit id quam itaque repellat, inventore aliquid sequi ad neque? Voluptatem repellendus error dolores ducimus quas quisquam earum.
+        </p>
+        <p class="no-col">
+            칼럼해제<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat eius eaque aliquid perspiciatis dolor reprehenderit, architecto quisquam. Iusto expedita similique a tempora aut perferendis velit laboriosam aliquam reprehenderit dolore.
+        </p>
+    </div>
+</body>
+</html>

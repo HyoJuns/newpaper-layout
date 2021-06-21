@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;    
+}
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image: url(./images/purty_wood_@2X.png);
+}
+
+/* Debug */
+#header
+{
+    width : 100vw;
+    height : 100px;
+    border : 2px solid #222;
+    clear : both;
+
+    position : relative;
+    padding-left: 20px;
+
+}
+
+.left
+{
+    width : 10vw;
+    float : left;
+}
+.left > img
+{
+    width : 10vw;
+    height : 10vh;
+}
+.center
+{
+    float : left;
+    width: 50vw;
+}
+
+.right
+{
+    float : right;
+}
+#section-1
+{
+    width: 100vw;
+    height: 800px;
+    border : 2px solid #222;
+
+    column-count: 3;
+    column-rule: 2px dotted #000;
+}
+
+#article1, #article2, #article3
+{
+    width : 300px;
+    min-height: 200px;
+    border: 1px solid red;
+
+}
+/* End of Debug */
